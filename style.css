@@ -1,0 +1,75 @@
+/*not minifyed due to better readability*/
+html {
+  display: flex;
+  background: url(images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: #f29633;
+  text-shadow: 4px 4px 4px #0f1719;
+  cursor: default;
+  margin: 0px 0px 50px 0px;
+}
+
+a {
+  position: relative;
+  background: white;
+  color: #f29633;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  padding: 10px 30px;
+  transition: 0.3s;
+  opacity: 0.85;
+  margin: 40px;
+}
+
+a:hover {
+  background: var(--color);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px var(--color);
+}
+
+a:before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #0f1719;
+}
+
+a span {
+  position: relative;
+  z-index: 1;
+}
+
+.landingtxt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landingtxtbtm {
+  margin: 30px;
+  color: #f29633;
+  text-shadow: 5px 5px 5px black;
+  opacity: 0.9;
+  cursor: default;
+}
